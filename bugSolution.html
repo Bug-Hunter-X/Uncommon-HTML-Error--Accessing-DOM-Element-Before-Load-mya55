@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Corrected HTML</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      document.getElementById("myDiv").innerHTML = "<p>This text is added after the DOM is loaded.</p>";
+    });
+  </script>
+</body>
+</html>
