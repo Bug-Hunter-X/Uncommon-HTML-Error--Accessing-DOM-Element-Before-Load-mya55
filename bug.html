@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+  <script>
+    // Attempting to access a non-existent element before it's added to the DOM
+    document.getElementById("myDiv").innerHTML = "<p>This text will cause an error if the element is not available.</p>";
+
+
+    //Another uncommon error: using a tag inside another tag where it is not allowed. 
+    //This one is easy to spot. 
+    document.write('<p><b>This is a paragraph</b></p>');
+  </script>
+</body>
+</html>
